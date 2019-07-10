@@ -30,3 +30,12 @@
 * **A2MAA** - Matematická analýza
 * **A2OPN** - Objektové programování a návrhové vzory
 * **A2SPT** - Softwarová podpora vývojového týmu
+
+## Zimní semestr 2019
+
+* **A3AFW** - Aplikační frameworky
+* **A3EJI** - Elektromagnetické jevy v informatice
+* **A3KRY** - Kryptologie
+* **A3NMS** - Numerické metody a statistika
+* **A3OSZ** - Operační systémy
+* **A1TPR** - Teorie programů
