@@ -1,9 +1,16 @@
 # Softwarové inženýrství
 
+```
+  Fakulta Aplikované Informatiky
+  Univerzita Tomáše Bati ve Zlíně
+  Nad Stráněmi 4511
+  760 05 Zlín
+``` 
 * **začátek studia**: 11. září 2018
 * **počet kreditů**: 60
 * **průměr**: 1.00
 * **ukončení studia**: *9. září 2024*
+
 
 ## Zimní semestr 2018
 
