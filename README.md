@@ -7,8 +7,9 @@
   760 05 Zlín
 ``` 
 * **začátek studia**: 11. září 2018
-* **počet kreditů**: 60
-* **průměr**: 1.00
+* **aktuální ročník**: první
+  * **počet kreditů**: 60
+  * **průměr**: 1.00
 * **ukončení studia**: *9. září 2024*
 
 
