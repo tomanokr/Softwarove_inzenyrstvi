@@ -1,0 +1,31 @@
+% zkopírováno od Viléma Zouhara - učím se LaTeX <3
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings, graphicx, multicol}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+\usepackage{amsmath, amssymb, amsfonts, amsthm}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{mathrsfs}
+\usepackage{wasysym} % smileys
+\setlength\parindent{0pt} % indent
+
+% my commands:
+\newcommand{\n}{\newline}
+\newcommand{\tab}{\hspace{1cm}}
+
+% \newtheorem{definition}{Definition}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{note}{Note}
+\newtheorem{algorithm}{Algorithm}
+
+\newcommand{\baseAll}[3]{\begin{#1}{#2} \begin{flushleft} #3 \end{flushleft} \end{#1}}
+\newcommand{\de}[2]{\baseAll{definition}{#1}{#2}}
+\newcommand{\ve}[2]{\baseAll{theorem}{#1}{#2}}
+
+\begin{dokument}
+\end{dokument}
