@@ -12,8 +12,8 @@
   * **průměr**: 1.00
 * **ukončení studia**: *9. září 2024*
 
-
-## Zimní semestr 2018
+## První ročník
+### Zimní semestr 2018
 
 * **A1AMS** - Analýza a modelování softwarových systémů
 * **A1DBS** - Databázové systémy
@@ -22,7 +22,7 @@
 * **A1ZIN** - Základy informatiky
 * **A1ZAP** - Základy programování
 
-## Letní semestr 2019
+### Letní semestr 2019
 
 * **A2ADS** - Algoritmy a datové struktury
 * **A2ARP** - Architektura počítačů
@@ -31,7 +31,8 @@
 * **A2OPN** - Objektové programování a návrhové vzory
 * **A2SPT** - Softwarová podpora vývojového týmu
 
-## Zimní semestr 2019
+## Druhý ročník
+### Zimní semestr 2019
 
 * **A3AFW** - Aplikační frameworky
 * **A3EJI** - Elektromagnetické jevy v informatice
