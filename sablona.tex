@@ -1,0 +1,49 @@
+% INICIALIZACE
+\documentclass[volby]{trida}[RRRR/MM/DD]
+%        TRIDA - {article, book, report, letter, slides}
+%              ARTICLE - dokument bez kapitol
+%        VOLBY
+%              - twoside - oboustraný tisk (implicitní pro styl book)
+%              - oneside - jednostraný tisk (implicitní pro ostatní styly
+%              - openright - kapitoly začínají na pravých stránkách
+%              - openany - kapitoly začínají i na levých
+%              - a4paper, a5paper, b5paper
+%              - letterpaper, legalpaper, executivepaper, landscape
+%              - ... ,12pt, 11pt, 10pt, ...
+%              - twocolumn (nejde u letter a slides)
+%              - leqno - čísla rovnic nalevo místo napravo
+%              - fleqn - zarovnání rovnice
+
+% PREAMBULE
+\usepackage[volby]{balík}
+\usepackage[ utf8 ]{ inputenc }             % formát dokumentu
+\usepackage[ czech ]{ babel }               % jazyk dokumentu
+\usepackage[ T1 ]{ fontenc }                % font písma
+\usepackage{ listings, graphicx, multicol } % vkládání obrázků
+\usepackage[ top = 2cm, bottom = 2cm, left = 2cm, right = 2cm, marginparwidth = 1.75cm ]{ geometry } % okraje dokumentu
+\usepackage{ amsmath, amssymb, amsfonts, amsthm }  % matematický formát
+\usepackage[ colorinlistoftodos ]{ todonotes } % 
+\usepackage[ colorlinks = true, allcolors = blue ]{ hyperref }
+\usepackage{ mathrsfs }
+\usepackage{ wasysym } % smileys
+\setlength\parindent{ 0pt } % indent
+\author{ Kristýna Tomanová }
+
+% my commands:
+\newcommand{\n}{\newline}
+\newcommand{\tab}{\hspace{1cm}}
+
+% \newtheorem{definition}{Definition}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{note}{Note}
+\newtheorem{algorithm}{Algorithm}
+
+\newcommand{\baseAll}[3]{\begin{#1}{#2} \begin{flushleft} #3 \end{flushleft} \end{#1}}
+\newcommand{\de}[2]{\baseAll{definition}{#1}{#2}}
+\newcommand{\ve}[2]{\baseAll{theorem}{#1}{#2}}
+
+\begin{dokument}
+.
+\end{dokument}
