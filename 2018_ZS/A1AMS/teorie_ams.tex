@@ -1,0 +1,62 @@
+\documentclass[11pt,a4paper]{book}   % velikost písma, velikost papíru
+% PREAMBULE
+\usepackage[utf8x]{inputenc}             % formát dokumentu
+\usepackage[czech]{babel}               % jazyk dokumentu
+\usepackage[T1]{fontenc}                % font písma
+\usepackage{listings,graphicx,multicol} % vkládání obrázků
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry} % okraje dokumentu
+\usepackage{amsmath,amssymb,amsfonts,amsthm}  % matematický formát
+\author{Kristýna Tomanová}
+\title{Analýza a modelování softwarových systémů}
+
+\begin{document}
+
+\chapter{Softwarové inženýrství}
+
+\section{Historie Softwarového inženýrství}
+
+V 60. letech 20. století díky rozšiřování využití počítačů a stoupající složitostí programů se také začaly množit problémové projekty, které způsobily \textbf{softwarovou krizi}. Týkalo se jí velké množství požadavků a funkčností, které zapříňovaly opoždění odevzdávání a překračování daného rozpočtu. V roce 1968 uspořádala organizace NATO první konferenci zabývající se touto krizí zvanou "Software engineering".
+
+% najít správné uvozovky
+
+\subsection{Slavné příklady selhání}
+
+\textbf{Mariner 1} byla sonda, která se měla v roce 1962 vydat k planetě Venuše. Její výprava skončila po 293 sekundách kvůli odchylce od plánovaného kurzu. \textbf{Příčina:} opomenutí funkce v programu (špatný přepis vzorce).
+
+\textbf{Apollo 11} v roce 1969 se jeho přistávací modul \textit{Eagle} odchýlil od plánované trajektorie. \textbf{Příčina:} zapnutý radar spotřebovával neplánovaný procesorový čas. 
+
+\textbf{Patriot} v roce 1991 SCUD vystřelil na zaměřený cíl, kterým se chybně stala kasárna vojáků. \textbf{Příčina:} zaznamenávání desetinných čísel jako čísel celých - špatný výpočet souřadnic (zaoktouhlování)
+
+% najít správný spojovník
+
+\subsection{Definice}
+
+\textbf{Software} je zdrojový kód k aplikaci zařízení. Základní vlastnosti dobrého softwaru jsou:
+\begin{description}
+  \item[funkcionalita] - souhrn poskytovaných, požadovaných nebo plánovaných funkcí
+  \item[výkonost]
+  \item[udržovatelnost]
+  \item[spolehlivost]
+  \item[použitelnost]
+\end{description}
+
+% najít platnou definici softwaru
+% najít správný spojovník
+
+\textbf{Systémové inženýrství} se zabývá vývojem počítačových systémů - tedy návrhem, vývojem hardware i software, stavebními pracemi a procesními otázkami. Součástí Systémového inženýrství je Softwarové inženýrství.
+
+% najít správný spojovník
+
+\textbf{Softwarové inženýrství} je disciplína, která se zabývá zavedením a používáním řádných inženýrských principů do tvorby software, kde cílem je ekonomická tvorba a spolehlivý software na dostupném hardware. Zabývá se teoriemi, metodikami a nástroji pro vývoj softwarových aplikací. Pracuje tedy se všemi aspekty vývoje, díky kterým celý proces vývoje popisuje. 
+Nejlepší postup vývoje nelze jednoznačně stanovit. Zatímco pro vývoj her je vhodné \textit{prototypování}, pro bezpečnostně kritický systém je potřeba pečlivá analýza a formální specifikace.
+
+\subsection{Softwarový produkt}
+
+\textbf{Generický softwarový produkt} Z návrhu vývojářů vzniká tzv. textit{krabicový produkt}. Tyto produkty jsou vhodné pro kancelářské aplikace, grafické programy, či účetnictví. U tohoto typu existuje prototypový uživatel, takže změny zadává marketing, nebo přímo vývojové oddělení.
+
+\textbf{Zakázkový softwarový produkt} se vývíjí na základě požadavků zákazníka a jeho zpětné vazby. Jsou to například bankovní aplikace, nebo elektronické obchody.
+
+\subsection{Softwarový proces}
+\textbf{Softwarový proces} je množina činností, jejichž cílem je vývoj nebo modernizace software a jsou nutné k vytvoření softwarového produktu. Definuje \textbf{projekty}, které se vztahují k jednotlivým zakázkám. Každý projekt je tvořen \textbf{realizací} \textbf{(metodologií vývoje softwaru)}, která je vázána na vývoj produktu, a \textbf{řízením} \textbf{(metodologií řízení projektu), jehož úkolem je plánování projektu. 
+
+\end{document}
