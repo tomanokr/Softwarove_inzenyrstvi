@@ -1,0 +1,36 @@
+\documentclass[11pt,a4paper]{book}   % velikost písma, velikost papíru
+% PREAMBULE
+\usepackage[utf8x]{inputenc}             % formát dokumentu
+\usepackage[czech]{babel}               % jazyk dokumentu
+\usepackage[T1]{fontenc}                % font písma
+\usepackage{listings,graphicx,multicol} % vkládání obrázků
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry} % okraje dokumentu
+\usepackage{amsmath,amssymb,amsfonts,amsthm}  % matematický formát
+\author{Kristýna Tomanová}
+\title{Analýza a modelování softwarových systémů}
+
+\begin{document}
+Základní pojmy
+
+\textbf{Data} jsou údaje získané pozorováním, měřením nebo zaznamenáním reality - tzn. data jsou nezpracovaná fakta.
+Pokud data projdou zpracováním (dostanou strukturu), vznikne z nich \textbf{informace} - smysluplná interpretace dat a vztahů mezi nimi.
+Data ukládáme do \textbf{databází} - souboru dat, který slouží pro popis reálného světa. Je to vlastně logicky uspořádáná kolekce navzájem souvisejících dat. Databází je např. evidence knihovny, sklad chemikálií, evidence studentů. 
+Aplikační úlohy nad databází řeší \textbf{databázový systém}. Databázový systém obsahuje datové strutkury tak, aby k nim měly optimální přístup všechny úlohy. Řeší uložení, uchování, formátování, zpracování a vyhledávání informací. Databázový systém je složen z databáze, Systému řízení báze dat a databázovou aplikací, dále také hardwarem, správcem a uživateli DBS.
+
+\textbf{Systém Řízení Báze Dat SŘBD} (ang. \textit{DataBase Management System DBSM} je programová vrstva řídící sdílený přístup k databázi. Řesší operace nad databází (definice, vytváření, udržování a řízený přístup), poskytuje všeobecnou možnost dotazování na data. Příkladem DBMS je Oracle, MS SQL Server, MySQL, Sybase, Informix, Progress.
+Funkce a služby DBMS
+- uložení, vyvolání a aktualizace dat
+- uživatelsky přístupný katalog (udržování struktury databáze, uživatelů, aplikacích)
+- podpora transakcí (přístup k obsahu databáze nebo jeho změna)
+- služby řízení souběžného přístupu
+- služby zotavení
+- autorizační služby (ochrana před neoprávněným přístupem)
+- podpora datové komunikace (integrace se síťovým komunikačním softwarem)
+- služby integrity (ochrana kvality dat)
+- služby podpory nezávislosti dat
+- utility
+
+
+Historie
+
+\end{document}
