@@ -32,5 +32,66 @@ Funkce a služby DBMS
 
 
 Historie
+Od začátku 60. let 19. století se začalo zdokonalovat shromažďování dat. Z děrných štítků na magnetickou pásku až po vynález pevných disků. Používaly se souborově orientované systémy pomocí tzv. \textbf{programově-datové závislosti} - každý program definuje a spravuje vlastní data. Pro databáze se používaly síťové a hierarchické datové modely.
+V roce 1970 E. F. Codd definoval \texbf{relační datový model}, který umožnil plošně výkonné transakční zpracování. Od té doby se začaly vyvíjet prototypy relačních DBMS a E-R modely pro návrhy databází.
+Od roku 1980 přechází výzkum DBMS na komerční systémy (Oracle). Vznikají paralelní a distribuované databázové systémy a objevují se první objektově orientované databázové systémy.
+V 90. letech se rozšířily aplikace pro dolování dat a velké datové sklady, díky rozmachu webového obchodování.
+Na přelomu století byly vydány XML a XQuery standardy a multimediální databáze. Od roku 2010 se začalo přecházet na NoSQL.
 
+
+Databázové systémy
+rozdělení podle způsobu ukládání dat a vazeb mezi nimi
+- předrelační (souborové, hierarchické, síťové)
+- relační (mainframe, PC file-server, klient-server)
+- postrelační (objektově orientované, objektově-relační, NoSQL)
+
+  Předrelační databázové systémy
+    Souborový model
+    - data jsou uložena přímo v souborech počítač
+    - soubory jsou nestrukturované (textový formát dat)
+    Hierarchický model
+    - data jsou organizována do stromové struktury
+      - každý syn má jednoho otce
+    - při úpravě tabulek je potřeba předefinovat celou databázi
+    Síťový model
+    - hierarchická struktura
+      - každý člen může mít více vlastníků
+    - struktura musí být definována předem
+    - umožňuje propojení mezi různými typy dat
+ Relační databázové systémy
+  Relační model
+  - založen na matematickém pojmu relačních množin
+    - pravidelná struktura dat reprezentována tabulkou
+    - vztahy mezi daty se realizují pomocí relační algebry
+Postrelační databázové systémy
+  Objektově orientovaný model
+  - reakce na potřebu ukládání objemných dat (fotografie, grafy, zvuky, videa)
+  - základní prvek - objekt
+    - uložen ve vlastní databázi
+    - datová část (text, grafika, zvuk, videa) a programová část (instrukce pro práci s daty)
+  Objektově-relační model
+  - relační databáze s objektově orientovaným modelem
+  - problémy se stabilitou
+  NoSQL model
+  - nemají definované databázové schéma
+  - při nutném vypořádání se s obrovským množství dat
+
+
+Architektura databáze
+
+Model ANSI (American National Standards Institute) má za cíl oddělit pohled uživatelů od fyzické reprezentace
+  - externí úroveň - uživatelský pohled na databázi
+  - konceptuální úroveň - obecný pohled na databázi (data a jejich relace)
+  - interní úroveň - fyzická reprezentace databáze
+  
+  Schéma databáze je celkový popis databáze. Specifikuje se během návrhu a nemění se.
+  - externí schéma - může být víc
+  - konceptuální schéma - může být jen jedno
+  - interní schéma - může být jen jeno
+  
+ Data v databázi v konkétním časovém okamžiku se nazývají instance databáze.
+ 
+ Nezávislost dat zaručuje, že vyšší úroveň není ovlivněna změnami na nižší úrovni
+ - logická nezávislost dat - odolnost externích schémat při změnách konceptuálního
+ - fyzická nezávislost dat - odolnost konceptuálního schématu při změnách interního 
 \end{document}
