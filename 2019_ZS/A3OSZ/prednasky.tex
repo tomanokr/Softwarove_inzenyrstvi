@@ -1,0 +1,90 @@
+Hierarchická struktura počítačového systému
+- hardware
+- operační systém
+- aplikační programy
+- uživatelé
+Operační systém
+- odděluje HW od SW
+- spravuje HW
+- poskytuje služby SW
+- jádro, které běží po celou dobu běhu počítačového systému
+    - některé nízkoúrovňové části OS jsou zaváděny na žádost
+Pohled shora dolů
+  = pohled na OS jako na rozšíření stroje
+  - skrývá před programy komplikovanost HW
+  - poskytuje jednoduché rozhranní pomocí vysokoúrovňových služeb (= sytémové volání)
+  - vytváří virtuální HW (virtual machine)
+ Pohled zdola nahoru
+  = pohled na OS jako na správce zdrojů
+  - působí jako řídící program, který spravuje zdroje a poskytuje je programům (resource allocator/manager)
+  - zabraňuje nesprávnému použití počítače
+ Vyvolání služby systému
+  - režim procesoru
+      - režim jádra (privilegovaný)
+          - povoleny všechny instrukce
+          - pouze vlastní OS (jádro OS)
+      - uživatelský
+          - některé instrukce jsou zakázány (např. I/O)
+          - aplikace a systémové programy
+  - postup volání služby aplikací:
+      - uložení parametrů (registr, zásobník)
+      - vyvolání speciální instrukce
+          - vyvolá obslužnou proceduru v jádře
+          - přepne do privilegovaného režimu
+      - OS zjistí službu, převezme parametry a vyvolá ji
+      - návrat do aplikace
+      - přepnutí zpět do uživatelského režimu
+Základní komponenty OS
+- procesy - přidělený výpočetný čas CPU, místo v paměti, vstupní a výstupní soubory
+- správa hlavní paměti - alokace a delokace paměti
+    - udržuje informaci o využívání paměti
+- I/O podsystém
+    - správa paměti pro buffering, caching a spooling (Simultaneous Peripherial Operation On Line)
+    - vytváření a rušení souborů a adresářů
+    - rozvrh diskových operací
+    - společné rozhraní ovladačů zařízení
+    - ovladače pro specifická zařízení
+- ochrana a bezpečnost
+    - pouze autorizované procesy
+    - specifikace přístupu
+    - mechanismus ochrany 
+- uživatelské rozhranní
+    - součást jádra systému nebo jako samostatný program
+    - Command Line Interface CLI - řádkově orientované zadávání příkazů
+    - Graphical User Interface GLI - ikony reprezentující programy
+- síť
+Architektura OS
+- Monolitický OS
+    - všechny části OS jsou obsaženy v kernelu
+    - přímá komunikace částí
+    - neomezený přístup kernelu k celému počítačovému systému
+    - starší OS (OS/360, VMS, Linux)
+- Microkernel
+    - poskytuje základní služby
+        - nízkoúrovňový paměťový management
+        - komunikace mezi procesy
+        - základní synchronizace procesů
+        - obsluha přerušení
+    - další části OS jsou spuštěny mimo jádro s menší úrovní práv
+    - OS Mach, GNU Hurd, Win NT
+- Vrstevný OS
+    - hierarchie procesů
+        - nejníže položené vrstvy komunikují s hardwarem
+        - každá vyšší vrstva poskytuje abstraktnější virtuální stroj
+        - vrstva komunikuje jen se sousední vrsvou
+        - možnost výstavby systému od nejnižších vrstev, modularita
+        - OS THE
+    - funkční hierarchie
+        - vznikají závislosti vrstev
+- síťové
+    - umožňují procesům přistupovat ke zdrojům jiného počítače v síti
+    - síťový souborový systém
+    - model klient-server
+    - komunikace přes síťový protokol
+- distribuované 
+    - spravuje zdroje na více počítačích
+    - mnoho počítačů vytváří jeden superpočítač
+    - bez ohledu na umístění zdrojů a procesu
+    - těžká implementace
+    - Chord, Amoeba, Sprite, Plan 9
+
