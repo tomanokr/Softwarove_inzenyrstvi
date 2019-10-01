@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:cviceni_treti="clr-namespace:Cviceni_treti"
+            x:Class="Cviceni_treti.MyTabbedPage">
+    <!--Pages can be added as references or inline-->
+    <TabbedPage.Children>
+        <cviceni_treti:MainPage Title="Hlavní stránka"></cviceni_treti:MainPage>
+        <cviceni_treti:Prvni_obsahova_stranka Title="Prvni stranka"></cviceni_treti:Prvni_obsahova_stranka>
+    </TabbedPage.Children>
+</TabbedPage>
