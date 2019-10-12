@@ -87,4 +87,132 @@ Architektura OS
     - bez ohledu na umístění zdrojů a procesu
     - těžká implementace
     - Chord, Amoeba, Sprite, Plan 9
+UNIX
+- 1969 vytvořen v assembleru
+- 1972 přepsán do C
+- porting - přenosnost na jiný typ počítače
+    projekt GNU - GNU's not UNIX
+        - Richard M.Stallman 1984
+        - kompletní unixový operační systém založený na svobodném software
+        - Free Software Foundation
+            - volné studium zdrojového kódu sw
+            - volné sdílení sw
+            - volné upravování chování programu
+            - volné zveřejňování upravené verze softwaru
+        - GPL - General Public License
+            - zajistit určitá práva vývojářům a uživatelům
+            - svoboda spouštět programy
+            - svoboda studovat a upravovat zdrojový kód
+            - svoboda redistribuovat zdroj a poskytovat úpravy
+        - modulární systém
+LINUX
+- v počátku 1991 byl osobním projektem Linuse Torvaldse
+- jednolitý kód s podporou načítání externích modulů
+    - modulární monolitické jádro
+        - zvýšení stability
+        - urychlení běhu jádra
+        - zmenšení velikosti samotného jádra
+        - zmenšení paměťových nároků
+- jádro operačního systému
+- kategorie verzí:
+    - prepatch / RC
+        - zaměřené na vývoj jádra
+        - nové funkce, které musí být nejdřív testovány
+    - mainline
+        - hlavní strom udržovaný Torvaldsem
+    - stable
+        - vydaný mainline
+    - longterm
+        - dlouhodobá podpora
+- distribuce
+    - balík programů, které jsou svázány s jádrem a dalším vybavením systému (knihovny, pomocné nástroje,...)
+    - LSB Linux Standard Base
+        - sada předpisů astandardů, kterým by měla odpovídat každá distribuce
+    - rozdělení
+        - binární x zdrojové
+        - komerční x nekomerční
+        - live distribuce x mini distribuce
+    - rozdíly  
+        - skladba programů
+        - frekvence a způsob vydávání aktualizací
+        - instalační program a konfigurační nástroje
+        - řešení startovacích skriptů ajejich obsahu
+        - organizace adresářů na disku
+        - dodatečná úprava programů
+        - cena a poskytované služby
+    -Slackware GNU/Linux
+    - Debian GNU/Linux
+        - balíčkovací systém dpkg
+    - Fedora Core
+        - RedHat
+        - RPM pro instalaci a správu balíků
+    - Ubuntu
+    - Linux Mint
+    - SuSE GNU/Linux
+    - Gentoo GNU/Linux
+    - Linux From Scratch
+    - Source Mage GNU/Linux
+    - Live Distribuce
+        -lze spustit rovnou z média bez nutnosti instalace
+        - Slax, Knoppix
+- Zavedení systému
+    - BIOS - provedení POST
+    - spuštění kódu v MBR (GRUB, LILO, SYSLINUX, Loadlin)
+        - GRUB GRand Unifiead Bootloader
+            - podpora souborového systému při spuštění
+            - umožňuje načíst konfigurační soubor z FS
+                - změna konfigurace za běhu
+            - obsahuje příkazový řádek
+            - multibbot = schopnost zřetězení s jiným zavaděčem
+            - fáze načítání
+                stage 1 - načten z MBR a spuštěn BIOSem
+                stage 1.5 - načítání kódem při přístupu na FS
+                stage 2 - menu pro výběr OS, možnost úpravy parametrů
+    - zavedení jádra Linux
+        - přepnutí procesoru do chráněného módu
+        - identifikace technického vybavení počítače
+        - vytvoření spontánních procesů
+    - spuštění startup skriptů a daemonů
+        - první spuštěný proces v user space
+        - proces init = rodič všech procesů v systému Unix
+Fáze jádra
+- činnost zavaděče končí předáním řízení kernelu = setup rutina jádra
+    - připraví přechod na protected mód
+    - dekomprimuje jádro a předá mu řízení
+- inicializace registrů
+- kontrola typu procesoru
+- vysokoúrovňová inicializace
+    - datové struktury, systémová konzola, podpora pro dynamické zavádění modulů, VFS (Virtual File System), VM (Virtual Memory manager), vyrovnávací cache, IPC (InterProcess Communication), quota (Subsystém limit a využití disků uživateli), kontroly na chyby hw
+- zavedení knihoven (glibc - GNU LIBrary C)
+- odstartuje vlákno (thread) pro start procesu init
+    - Systém V inicializace (SysV init)
+    - zařizuje postupné spouštění skriptů
+    - několik úrovní běhu (runlevel 0-6)
+Getty
+- program, který umožňuje připojit se přes sériové zařízení (virtuální terminál, textový terminál, modem)
+- zobrazí přihlašovací prompt - předá uživatelské údaje programu Login
+    - ověří heslo a spustí shell
+        - kontroluje přihlášení uživatele v /etc/passwd/
+            - při podpoře stínování i v /etc/shadow
+        - spustí program uvedený v etc/passwd/ (většinou Bash)
+- startován v etc/inittab/ procesem init
+Bash
+- uživatelské rozhraní, čte příkazy a provádí je
+- interpret programovacího jazyka
+Systemd
+- nahrazuje init
+- přechází na něj většina distribucí
+- zajištění jednotné, centralizované inicializace
+- sleduje závislosti procesů a služeb pomocí jejich startování a zastavování
+- zná všechny procesy včetně PID a získávání informací o procesech
+    - mnohem jednodušší pro systémové administrátory
+- podporuje zásobníky - izolovaná prostředí bez virtuálních strojů
+    - větší bezpečnost a jednodušší projektování systému
+- 
+        
+    
 
+
+        
+    
+            
